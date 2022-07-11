@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>html 연습</title>
+  </head>
+  <body>
+    <div id="container">
+      <p>버튼 추가</p>
+    </div>
+    <script>
+      const container = document.getElementById("container");
+      const btn1 = document.createElement("button");
+      btn1.innerHTML = "콘솔에 HELLO 출력하기";
+      btn1.onclick = Print;
+      container.appendChild(btn1);
+
+      function Print() {
+        console.log("HELLO");
+      }
+    </script>
+  </body>
+</html>

@@ -1,0 +1,75 @@
+/*글꼴 적용*/
+@import url('https://fonts.googleapis.com/css2?family=Nanum+Myeongjo:wght@800&display=swap');
+
+/*normal tag css*/
+* {
+  box-sizing: border-box;
+}
+
+a {
+  color: rgb(213, 63, 66);
+  text-decoration: none;
+}
+
+dt, dd {
+  padding: 3px;
+}
+
+dt {
+  color: rgb(213, 63, 66);
+  font-style: italic;
+  font-size: 30px;
+  font-weight: bold;
+}
+
+
+/*class css*/
+.menuimg {
+  width: 80%;
+}
+
+
+/*id css*/
+#header {
+  text-align: center;
+  font-size: 50px;
+  font-family: 'Nanum Myeongjo', serif;
+}
+
+#nav {
+  display: block;
+  font-size: 30px;
+  margin: 15px;
+  width: 97%;
+}
+
+img {
+  width: 100%;
+  height: auto;
+}
+
+#hansemlink:hover {
+  cursor: pointer;
+}
+
+#visitpage {
+  color: black;
+  background-color: powderblue;
+}
+
+
+/*media query*/
+@media only screen and (min-width: 1500px) {
+  #nav {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+
+  #nav a {
+    text-align: center;
+  }
+
+  #header {
+    font-size: 63px;
+  }
+}

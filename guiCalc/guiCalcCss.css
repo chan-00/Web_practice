@@ -1,0 +1,62 @@
+* {
+  box-sizing: border-box;
+}
+
+.container {
+  background-color: gray;
+  border: 1px solid black;
+  width: 450px;
+  height: 500px;
+  font-size: 0.5rem;
+  display: grid;
+  grid-template-areas:
+  "inputtext inputtext inputtext inputtext"
+  "sevennum eightnum ninenum addoper"
+  "fournum fivenum sixnum suboper"
+  "onenum twonum threenum multioper"
+  "subtext zeronum decimaltext divoper"
+  "initbtn resulttext resulttext remainoper";
+}
+
+.container input {
+  grid-area: inputtext;
+  font-size: 1rem;
+}
+
+.container * {
+  border: 1px solid black;
+  border-radius: 10px;
+  background-color: white;
+  margin: 3px;
+}
+
+.container button {
+  box-shadow : 3px 3px 3px black;
+  transition-duration: 0.3s;
+}
+
+.container button:active {
+  margin-left: 5px;
+  margin-top: 5px;
+  box-shadow: none;
+}
+
+.container #one {grid-area: onenum;}
+.container #two {grid-area: twonum;}
+.container #three {grid-area: threenum;}
+.container #four {grid-area: fournum;}
+.container #five {grid-area: fivenum;}
+.container #six {grid-area: sixnum;}
+.container #seven {grid-area: sevennum;}
+.container #eight {grid-area: eightnum;}
+.container #nine {grid-area: ninenum;}
+.container #zero {grid-area: zeronum;}
+.container #add {grid-area: addoper;}
+.container #sub {grid-area: suboper;}
+.container #multiple {grid-area: multioper;}
+.container #divn {grid-area: divoper;}
+.container #subonetext {grid-area: subtext;}
+.container #decimal {grid-area: decimaltext;}
+.container #result {grid-area: resulttext;}
+.container #initbtn {grid-area: initbtn;}
+.container #remainbtn {grid-area: remainoper;}

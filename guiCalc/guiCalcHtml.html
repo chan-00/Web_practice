@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>계산기 구현</title>
+    <link rel="stylesheet" href="./guiCalcCss.css">
+  </head>
+  <body>
+    <div class="container">
+      <input type="text" id="ipnum" placeholder="여기에 계산식이 입력됩니다.">
+      <button type="button" name="button" onclick="inputText('7')" id="seven">7</button>
+      <button type="button" name="button" onclick="inputText(8)" id="eight">8</button>
+      <button type="button" name="button" onclick="inputText(9)" id="nine">9</button>
+      <button type="button" name="button" onclick="inputOper(' + ')" id="add">+</button>
+      <button type="button" name="button" onclick="inputText(4)" id="four">4</button>
+      <button type="button" name="button" onclick="inputText(5)" id="five">5</button>
+      <button type="button" name="button" onclick="inputText(6)" id="six">6</button>
+      <button type="button" name="button" onclick="inputOper(' - ')" id="sub">-</button>
+      <button type="button" name="button" onclick="inputText(1)" id="one">1</button>
+      <button type="button" name="button" onclick="inputText(2)" id="two">2</button>
+      <button type="button" name="button" onclick="inputText(3)" id="three">3</button>
+      <button type="button" name="button" onclick="inputOper(' * ')" id="multiple">*</button>
+      <button type="button" name="button" onclick="subText()" id="subonetext">X</button>
+      <button type="button" name="button" onclick="inputText(0)" id="zero">0</button>
+      <button type="button" name="button" onclick="inputText('.')" id="decimal">.</button>
+      <button type="button" name="button" onclick="inputOper(' / ')" id="divn">/</button>
+      <button type="button" name="button" onclick="initText()" id="initbtn">C</button>
+      <button type="button" name="button" onclick="inputOper(' % ')" id="remainbtn">%</button>
+      <button type="button" name="button" onclick="calcNum()" id="result">=</button>
+    </div>
+
+    <script src="./guiCalcJs.js"></script>
+  </body>
+</html>
